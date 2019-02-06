@@ -13,7 +13,7 @@
         <TextBox x:Name="name" HorizontalAlignment="Left" Height="24" Margin="145,120,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="156" TextChanged="TextBox_TextChanged"/>
         <TextBox x:Name="address" HorizontalAlignment="Left" Height="24" Margin="145,178,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="156"/>
         <TextBox x:Name="zipcode" HorizontalAlignment="Left" Height="24" Margin="145,242,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="156"/>
-        <ListBox x:Name="lst" HorizontalAlignment="Left" Height="151" Margin="383,116,0,0" VerticalAlignment="Top" Width="356"/>
+        <ListBox x:Name="lst" HorizontalAlignment="Left" Height="151" Margin="383,116,0,0" VerticalAlignment="Top" Width="356" SelectionChanged="lst_SelectionChanged"/>
         <Button x:Name="button" Content="SUBMIT" HorizontalAlignment="Left" Margin="255,325,0,0" VerticalAlignment="Top" Width="230" Height="60" Background="#FF5AF7FF" FontSize="24" FontWeight="Bold" BorderBrush="White" Click="button_Click"/>
 
     </Grid>
