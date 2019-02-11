@@ -20,8 +20,8 @@ namespace Wen_Participation1
     /// </summary>
     public partial class MainWindow : Window
     {
-        List<Form> submissions = new List<Form>();
-        Random rand = new Random();
+        //List<Form> submissions = new List<Form>();
+        //Random rand = new Random();
 
         public MainWindow()
         {
@@ -38,7 +38,7 @@ namespace Wen_Participation1
             string userName = name.Text;
             string userAddress = address.Text;
             int ZipCode = Convert.ToInt32(zipcode.Text);
-            Form submission1 = new Form();
+            Form submissions = new Form();
 
             //for (int i = 1; i < 8; i++)
             //{
@@ -58,7 +58,7 @@ namespace Wen_Participation1
             //}
 
             bool IsFormValid = true;
-            if(name.Text==" " || name.Text == string.Empty)
+            if (name.Text == " " || name.Text == string.Empty)
             {
                 MessageBox.Show("Please input your name");
                 name.Focus();
@@ -67,17 +67,18 @@ namespace Wen_Participation1
             }
             if (address.Text == "")
             {
-                MessageBox.Show("Please input your name");
+                MessageBox.Show("Please input your address");
                 address.Focus();
                 // return;
                 IsFormValid = false;
             }
+
             if (IsFormValid = false)
             {
                 return;
             }
 
-            submissions.Add(submission1);
+            lst.Items.Add(submissions);
         }
 
         //private void lst_SelectionChanged(object sender, SelectionChangedEventArgs e)

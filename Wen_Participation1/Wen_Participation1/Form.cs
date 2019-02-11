@@ -33,15 +33,16 @@ namespace Wen_Participation1
 
         public override string ToString()
         {
-            string result = $"Hello {Name}, your address is {Address}, and zipcode is {ZipCode}{one} {two} {qwe()}";
+            //string result = $"Hello {Name}, your address is {Address}, and zipcode is {ZipCode}{one} {two} //{qwe()}";
+            string result = $"Hello {Name}, your address is {Address}, and zipcode is {ZipCode}";
             //result = $"{two}";
             return result;
             string concat = "this" + Name + " is how you " + Address + " ";
         }
 
-        public double qwe()
-        {
-            return one + two;
-        }
+        //public double qwe()
+        //{
+        //    return one + two;
+        //}
     }
 }
